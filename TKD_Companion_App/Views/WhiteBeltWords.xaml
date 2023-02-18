@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TKD_Companion_App.ViewModels" x:DataType="viewmodels:WhiteBeltWordsViewModel"
+             x:Class="TKD_Companion_App.Views.WhiteBeltWords"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="Oath" Text="The Student Oath:" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label TextColor="Black" HorizontalOptions="CenterAndExpand">
+                    <Label.Text>
+                        I shall observe the tenets of Taekwon-Do
+I shall respect Instructors and seniors
+I shall never misuse Taekwon-Do
+I shall be a champion of freedom and justice
+I shall build a more peaceful world.
+                    </Label.Text>
+                </Label>
+                <Line/>
+                <Label Text="The Tenets of Taekwon-Do:" FontSize="Large" TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="Tenets" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="What does White mean?" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="WhiteMeaning" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Stances" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="WhiteStances" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Body Parts/Tools" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="WhiteBodyParts" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Numbers" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="WhiteNumbers" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Commands" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="WhiteCommands" TextColor="Black"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

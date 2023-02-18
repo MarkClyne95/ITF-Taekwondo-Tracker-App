@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TKD_Companion_App.ViewModels" x:DataType="viewmodels:GreenTagWordsViewModel"
+             x:Class="TKD_Companion_App.Views.GreenTagWords"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="Oath" Text="The Student Oath:" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label TextColor="Black" HorizontalOptions="CenterAndExpand">
+                    <Label.Text>
+                        I shall observe the tenets of Taekwon-Do
+I shall respect Instructors and seniors
+I shall never misuse Taekwon-Do
+I shall be a champion of freedom and justice
+I shall build a more peaceful world.
+                    </Label.Text>
+                </Label>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="The Tenets of Taekwon-Do:" FontSize="Large" TextColor="Black"  HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="Tenets" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="What does Yellow mean?" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="YellowMeaning" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="What does Green mean?" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="GreenMeaning" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Image Source="dosan.png" VerticalOptions="Center" HeightRequest="64" />
+                <Label Text="Pattern: " FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="YellowBeltPattern" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Stances: " FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="YellowBeltStances" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Movements: " FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="YellowBeltMovements" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="Movements: " FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="GreenTagHandParts" TextColor="Black"/>
+                <Line/>
+                <BoxView 
+                   HeightRequest="1"
+                   Color="LightGray"
+                   Margin ="40, 0, 40, 0"/>
+                <Label Text="General: " FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="YellowBeltGeneral" TextColor="Black"/>
+                <Line/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

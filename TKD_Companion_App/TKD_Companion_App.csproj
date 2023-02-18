@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreshMvvm" Version="4.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\GreenBeltWords.xaml.cs">
+      <DependentUpon>GreenBeltWords.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\YellowBeltWords.xaml.cs">
+      <DependentUpon>YellowBeltWords.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\GreenTagWords.xaml.cs">
+      <DependentUpon>GreenTagWords.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\YellowTagWords.xaml.cs">
+      <DependentUpon>YellowTagWords.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\WhiteBeltWords.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

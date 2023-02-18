@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TKD_Companion_App.ViewModels" xmlns:tkd_companion_app="clr-namespace:TKD_Companion_App" x:DataType="viewmodels:ItemDetailViewModel"
+             x:Class="TKD_Companion_App.Views.ItemDetailPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="15">
+                <Label Text="Student Name:" TextColor="Black" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="Name" Text="{Binding Text, Mode=TwoWay}" TextColor="Black" FontSize="Small" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Student Grade:" TextColor="Black" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
+                <Label x:Name="Grade" Text="{Binding Grade, Mode=TwoWay}" TextColor="Black" FontSize="Small" HorizontalOptions="CenterAndExpand"/>
+                <Line/>
+                <Label Text="Change Grade with the Picker below." TextColor="Black" FontSize="Large"/>
+                <tkd_companion_app:BorderlessPicker x:Name="ChangeGrade" SelectedItem="{Binding Grade, Mode=TwoWay}"/>
+                <Button x:Name="Save" Command="{Binding SaveCommand}" Text="Save" BackgroundColor="LightGreen"/>
+                <Line/>
+                <Button x:Name="WhiteBelt" Text="White Belt (흰색 띠) Definitions"></Button>
+                <Button x:Name="YellowTag" Text="Yellow Tag Definitions"></Button>
+                <Button x:Name="YellowBelt" Text="Yellow Belt (노란색 띠) Definitions"></Button>
+                <Button x:Name="GreenTag" Text="Green Tag Definitions"></Button>
+                <Button x:Name="GreenBelt" Text="Green Belt Definitions (녹색 띠)"></Button>
+                <Button x:Name="BlueTag" Text="Blue Tag Definitions"></Button>
+                <Button x:Name="BlueBelt" Text="Blue Belt Definitions (파란색 띠)"></Button>
+                <Button x:Name="RedTag" Text="Red Tag Definitions"></Button>
+                <Button x:Name="RedBelt" Text="Red Belt Definitions (빨간색 띠)"></Button>
+                <Button x:Name="BlackTag" Text="Black Tag Definitions"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
